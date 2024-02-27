@@ -47,6 +47,8 @@ jobs:
             ${{ runner.os }}-gatsby-build-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: install modules
+        run: npm install
       - name: build gatsby
         run: npm run build
       - name: Upload artifact
