@@ -1,6 +1,4 @@
 name: GitHub Pages
-working-directory: ./site
-
 on:
   push:
     branches:
@@ -27,8 +25,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
+      
       - run: npm ci
+        working-directory: ./site
       - run: npm run format
       - run: npm run test
       - run: npm run build
