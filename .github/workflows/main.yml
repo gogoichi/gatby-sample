@@ -1,4 +1,5 @@
 name: GitHub Pages
+working-directory: ./site
 
 on:
   push:
