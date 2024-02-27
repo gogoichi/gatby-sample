@@ -23,7 +23,7 @@ jobs:
 
       # GitHub Pagesに公開
       # デフォルトではgh-pageeブランチにpushする
-      - name: Push gh-pages branch
+      - name: Push master branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           # Deploy keysやPersonal access Tokensも使用可能
