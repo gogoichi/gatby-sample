@@ -27,9 +27,9 @@ concurrency:
 # Default to bash
 defaults:
   run:
-    shell: bash
     working-directory: ./site
-
+    shell: bash
+    
 jobs:
   # Build job
   build:
