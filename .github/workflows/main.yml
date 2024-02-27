@@ -6,7 +6,7 @@ on:
   pull_request:
 defaults:
   run:
-    working-directory:site
+    working-directory: ./site
 jobs:
   deploy:
     runs-on: ubuntu-20.04
