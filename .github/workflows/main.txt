@@ -57,11 +57,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
-      # - name: install modules
-      #   run: npm install
-      # - name: build gatsby
-      #   run: npm run build
+          path: ./public
   # Deployment job
   deploy:
     environment:
