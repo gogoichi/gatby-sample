@@ -4,7 +4,9 @@ on:
     branches:
       - master
   pull_request:
-
+defaults:
+  run:
+    working-directory:site
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -27,7 +29,6 @@ jobs:
             ${{ runner.os }}-node-
       
       - run: npm ci
-        working-directory: ./site
       - run: npm run format
       - run: npm run test
       - run: npm run build
