@@ -22,4 +22,4 @@ jobs:
       - name: install modules
         run: npm install
       - name: build gatsby
-        run: npm run buld
+        run: npm run build
