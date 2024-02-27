@@ -19,6 +19,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+defaults:
+  run:
+    working-directory: ./site
+    
 jobs:
   deploy:
     environment:
